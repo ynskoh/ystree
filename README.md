@@ -1,6 +1,8 @@
 # ystree
-tree directory ui
+tree directory ui library
 
-import by csv file or excel format string
+unsing Jquery
+
+import by csv file or string excel format
 
 

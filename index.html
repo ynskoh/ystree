@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>YS Tree</title>
+  <link rel="stylesheet" type="text/css" href="ystree.css"/>
+  <script src="ystree.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+	
+<body>
+  <h1>YS Tree</h1>
+  <p>load tree directory ui from CSV or textarea below</p>
+
+  <div id="ysTree"></div>
+  <br>
+<textarea id="a12">id,parent,url,link,count,desc
+1,0,music.naver.com,http://music.naver.com,3,main
+2,1,music.naver.com/listen,http://music.naver.com,2,listen
+3,2,music.naver.com/listen/newRelease.nhn,http://music.naver.com,0,newrelease
+4,2,music.naver.com/listen/genre,http://music.naver.com,1,genre
+5,4,music.naver.com/listen/genre/home.nhn,http://music.naver.com,0,home
+6,1,music.naver.com/video,http://music.naver.com,1,video
+7,6,music.naver.com/video/home.nhn,http://music.naver.com,0,home
+8,1,music.naver.com/recommend,http://music.naver.com,2,recommend
+9,8,music.naver.com/recommend/themeChannelList.nhn,http://music.naver.com,0,theme
+10,8,music.naver.com/recommend/themeChannelPlayList.nhn,http://music.naver.com,0,theme
+11,0,blog.naver.com,http://blog.naver.com,0,blog</textarea>
+  <br><br>
+  <a href="#" onclick="ysTree.loadByCSV('2.csv');">CSV</a>
+  <br><br>
+  <a href="#" onclick="ysTree.loadByStr('a12');">txtarea</a>
+
+<br>
+<div id="ysTree2">
+</div>
+
+</body>
+</html>
+

@@ -1,3 +1,6 @@
+/**
+ysTree by oys
+**/
 
 var ysTree = {
 	csv2Json: function(csv){
@@ -60,7 +63,7 @@ var ysTree = {
 		});
 	},
 	loadByStr: function(id){
-		ysTree.renderTree($('#'+id).text());
+		ysTree.renderTree($('#'+id).val());
 	},
 	loadByCSV: function(file){
 		$.ajax({
